@@ -118,7 +118,7 @@
                                                         "uri": "https://virustotal.com/api/v3/ip_addresses/@{item()?['address']}",
                                                         "method": "GET",
                                                         "headers": {
-                                                            "x-apikey": "ec2edb6228594c2fde5e348b89971840ebb5e72c9b371292fe11851e9ddbe27d"
+                                                            "x-apikey": ""
                                                         }
                                                     },
                                                     "runtimeConfiguration": {
@@ -1853,7 +1853,7 @@
                                                         "uri": "https://www.virustotal.com/api/v3/urls",
                                                         "method": "POST",
                                                         "headers": {
-                                                            "x-apikey": "8488692f9c402caac50ad7d7bd471d8d546a6f7a48498ffa0ed3176464fcab4e",
+                                                            "x-apikey": "",
                                                             "Content-Type": "application/x-www-form-urlencoded"
                                                         },
                                                         "body": "url=@{item()?['Url']}"
@@ -1924,7 +1924,7 @@
                                                         "uri": "https://www.virustotal.com/api/v3/urls/@{split(body('Parse_JSON_2')?['data']?['id'], '-')[1]\r\n}",
                                                         "method": "GET",
                                                         "headers": {
-                                                            "x-apikey": "8488692f9c402caac50ad7d7bd471d8d546a6f7a48498ffa0ed3176464fcab4e"
+                                                            "x-apikey": ""
                                                         }
                                                     },
                                                     "runtimeConfiguration": {
@@ -3808,7 +3808,7 @@
                                                         "uri": "https://www.virustotal.com/api/v3/files/ @{item()?['address']}",
                                                         "method": "GET",
                                                         "headers": {
-                                                            "x-apikey": "8488692f9c402caac50ad7d7bd471d8d546a6f7a48498ffa0ed3176464fcab4e"
+                                                            "x-apikey": ""
                                                         }
                                                     },
                                                     "runtimeConfiguration": {
