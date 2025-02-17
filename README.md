@@ -24,7 +24,7 @@ The IOC Reputation Checker Playbook is an Azure Logic App designed to automate t
 3. Uses traditional HTTP GET request instead of the VirusTotal Trigger to avoid 429 (quota exceeded) errors when using a general API key.
 4. Prints a single comment with all entities in a well-structured tabular format.
 
-🚀 # Deploy Sentinel Playbook
+🚀 **Deploy Sentinel Playbook**
 
 Click the button below to deploy the **IOC Reputation Check Playbook** to Azure.
 
