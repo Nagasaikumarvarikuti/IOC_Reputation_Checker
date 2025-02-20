@@ -4262,13 +4262,13 @@
                     "$connections": {
                         "value": {
                             "azuresentinel-3": {
-                                "id": "/subscriptions/8457a4da-dd02-4331-928d-10240983210a/providers/Microsoft.Web/locations/centralindia/managedApis/azuresentinel",
-                                "connectionId": "/subscriptions/8457a4da-dd02-4331-928d-10240983210a/resourceGroups/Sentinel/providers/Microsoft.Web/connections/azuresentinel",
+                                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', 'centralindia', '/managedApis/azuresentinel')]",
+                                "connectionId": "[resourceId('Microsoft.Web/connections', 'azuresentinel')]",
                                 "connectionName": "azuresentinel"
-                            },
+                                },
                             "azuresentinel-2": {
-                                "id": "/subscriptions/8457a4da-dd02-4331-928d-10240983210a/providers/Microsoft.Web/locations/eastus/managedApis/azuresentinel",
-                                "connectionId": "/subscriptions/8457a4da-dd02-4331-928d-10240983210a/resourceGroups/Sentinel/providers/Microsoft.Web/connections/azuresentinel",
+                                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', 'eastus', '/managedApis/azuresentinel')]",
+                                "connectionId": "[resourceId('Microsoft.Web/connections', 'azuresentinel')]",
                                 "connectionName": "azuresentinel"
                             }
                         }
