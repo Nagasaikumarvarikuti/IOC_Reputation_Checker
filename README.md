@@ -28,4 +28,4 @@ The IOC Reputation Checker Playbook is an Azure Logic App designed to automate t
 
 Click the button below to deploy the **IOC Reputation Check Playbook** to Azure.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://github.com/Nagasaikumarvarikuti/IOC_Reputation_Checker/blob/Hiday/sanitized_template.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2FNagasaikumarvarikuti%2FIOC_Reputation_Checker%2Fblob%2FHiday%2Fsanitized_template.json)
