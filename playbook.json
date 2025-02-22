@@ -7,7 +7,7 @@
         {
             "type": "Microsoft.Logic/workflows",
             "apiVersion": "2017-07-01",
-            "name": "IOC_Reputation_Switch",
+            "name": "Testing",
             "location": "eastus",
             "properties": {
                 "state": "Enabled",
@@ -34,7 +34,7 @@
                             "inputs": {
                                 "host": {
                                     "connection": {
-                                        "name": "@parameters('$connections')['azuresentinel-3']['connectionId']"
+                                        "name": "@parameters('$connections')['azuresentinel']['connectionId']"
                                     }
                                 },
                                 "body": {
@@ -51,7 +51,7 @@
                             "inputs": {
                                 "host": {
                                     "connection": {
-                                        "name": "@parameters('$connections')['azuresentinel-2']['connectionId']"
+                                        "name": "@parameters('$connections')['azuresentinel']['connectionId']"
                                     }
                                 },
                                 "method": "post",
@@ -69,7 +69,7 @@
                             "inputs": {
                                 "host": {
                                     "connection": {
-                                        "name": "@parameters('$connections')['azuresentinel-2']['connectionId']"
+                                        "name": "@parameters('$connections')['azuresentinel']['connectionId']"
                                     }
                                 },
                                 "method": "post",
@@ -87,7 +87,7 @@
                             "inputs": {
                                 "host": {
                                     "connection": {
-                                        "name": "@parameters('$connections')['azuresentinel-2']['connectionId']"
+                                        "name": "@parameters('$connections')['azuresentinel']['connectionId']"
                                     }
                                 },
                                 "method": "post",
@@ -3791,7 +3791,7 @@
                                                     "inputs": {
                                                         "host": {
                                                             "connection": {
-                                                                "name": "@parameters('$connections')['azuresentinel-2']['connectionId']"
+                                                                "name": "@parameters('$connections')['azuresentinel']['connectionId']"
                                                             }
                                                         },
                                                         "method": "post",
@@ -4052,7 +4052,7 @@
                                                 "inputs": {
                                                     "host": {
                                                         "connection": {
-                                                            "name": "@parameters('$connections')['azuresentinel-2']['connectionId']"
+                                                            "name": "@parameters('$connections')['azuresentinel']['connectionId']"
                                                         }
                                                     },
                                                     "method": "post",
@@ -4180,7 +4180,7 @@
                                     "inputs": {
                                         "host": {
                                             "connection": {
-                                                "name": "@parameters('$connections')['azuresentinel-2']['connectionId']"
+                                                "name": "@parameters('$connections')['azuresentinel']['connectionId']"
                                             }
                                         },
                                         "method": "post",
@@ -4201,7 +4201,7 @@
                                     "inputs": {
                                         "host": {
                                             "connection": {
-                                                "name": "@parameters('$connections')['azuresentinel-2']['connectionId']"
+                                                "name": "@parameters('$connections')['azuresentinel']['connectionId']"
                                             }
                                         },
                                         "method": "post",
@@ -4225,7 +4225,7 @@
                                         "inputs": {
                                             "host": {
                                                 "connection": {
-                                                    "name": "@parameters('$connections')['azuresentinel-2']['connectionId']"
+                                                    "name": "@parameters('$connections')['azuresentinel']['connectionId']"
                                                 }
                                             },
                                             "method": "post",
@@ -4261,16 +4261,11 @@
                 "parameters": {
                     "$connections": {
                         "value": {
-                            "azuresentinel-3": {
+                            "azuresentinel": {
                                 "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', 'centralindia', '/managedApis/azuresentinel')]",
                                 "connectionId": "[resourceId('Microsoft.Web/connections', 'azuresentinel')]",
                                 "connectionName": "azuresentinel"
-                                },
-                            "azuresentinel-2": {
-                                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', 'eastus', '/managedApis/azuresentinel')]",
-                                "connectionId": "[resourceId('Microsoft.Web/connections', 'azuresentinel')]",
-                                "connectionName": "azuresentinel"
-                            }
+                                }
                         }
                     }
                 }
