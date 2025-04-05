@@ -1879,7 +1879,8 @@
                                                         "uri":  "https://www.virustotal.com/api/v3/urls",
                                                         "method":  "POST",
                                                         "headers":  {
-                                                            "x-apikey":  ""
+                                                            "x-apikey":  "",
+                                                            "Content-Type": "application/x-www-form-urlencoded"
                                                         },
                                                         "body":  "url=@{item()?['Url']}"
                                                     },
